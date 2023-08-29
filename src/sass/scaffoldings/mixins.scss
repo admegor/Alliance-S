@@ -1,0 +1,73 @@
+//layuout + padding
+$maxWidth: 1550;
+
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../font/#{$file_name}.woff") format("woff"),
+        url("../font/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+
+@mixin md {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin md-min {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+@mixin desktop-min {
+    @media (min-width: $maxWidth + px) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin bg {
+    @media (max-width: 1080px) {
+        @content;
+    }
+}
+@mixin xxl {
+    @media (max-width: 1600px) {
+        @content;
+    }
+}
+@mixin xl {
+    @media (max-width: 1300px) {
+        @content;
+    }
+}
+
+@mixin list-reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@include font("ProstoOne","ProstoOne-Regular","400","normal");
+@include font("TildaSans","TildaSans-Regular","400","normal");
+@include font("TildaSans","TildaSans-Medium","500","normal");
+@include font("TildaSans","TildaSans-SemiBold","600","normal");
+@include font("TildaSans","TildaSans-Bold","700","bold");
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 428;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 428px) / #{$maxWidth}));
+    @include desktop-min {
+        font-size: #{$pcSize + px};
+    }
+}

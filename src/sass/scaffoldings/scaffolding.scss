@@ -1,0 +1,77 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    @include adaptiv-font(18, 14);
+    font-weight: 500;
+    font-family: "TildaSans", Arial, Helvetica, sans-serif;
+    line-height: 1.3;
+    color: $font-color;
+    overflow-x: hidden;
+}
+
+.button-reset {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1750px;
+    margin: 0 auto;
+    padding: 0 15px;
+    @include xxl {
+        max-width: 1300px;
+    }
+    @include xl {
+        max-width: 1000px;
+    }
+    @include lg {
+        max-width: 768px;
+    }
+}
+
+.page-title {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+    @include adaptiv-font(62, 28);
+    & span {
+        color: $accent;
+    }
+    @include md {
+        margin-bottom: 30px;
+    }
+}

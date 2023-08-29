@@ -1,0 +1,17 @@
+.nav-header {
+    &__list {
+        display: flex;
+        align-items: center;
+        @include list-reset;
+        & li:not(:first-child) {
+            margin-left: 40px;
+        }
+        & li {
+            & a {
+                color: $font-color;
+                text-decoration: none;
+                font-weight: 500;
+            }
+        }
+    }
+}
