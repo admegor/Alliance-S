@@ -8,7 +8,7 @@
         border-bottom-right-radius: 0;
         @include md {
             border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;            
+            border-bottom-right-radius: 0;
         }
     }
     &__wrap {
@@ -21,6 +21,8 @@
         @include md {
             border-bottom-left-radius: 30px;
             border-bottom-right-radius: 30px;
+            flex-direction: column;
+            padding: 0 10px 60px;
         }
     }
     &__content {
@@ -28,6 +30,9 @@
         flex-direction: column;
         justify-content: space-between;
         padding-right: 40px;
+        @include md {
+            padding-right: 0;
+        }
     }
     &__box {
         background-color: #fff;
@@ -37,9 +42,26 @@
         padding: 0 50px 0 163px;
         display: flex;
         align-items: center;
-        height: 237px;
+        height: 50%;
+        @include xl {
+            padding: 0 30px 0 80px;
+            width: 400px;
+        }
+        @include lg {
+            width: 300px;
+        }
+        @include md {
+            height: initial;
+            width: 100%;
+            padding: 30px 30px 30px 80px;
+            border-radius: 30px;
+        }
         &:nth-child(2) {
             margin-top: 40px;
+            @include md {
+                margin-top: 10px;
+                margin-bottom: 30px;
+            }
         }
         &::after {
             content: "";
@@ -50,6 +72,12 @@
             height: 25px;
             background-color: #9DB0A5;
             border-radius: 50%;
+            @include md {
+                width: 20px;
+                height: 20px;
+                left: 16px;
+                top: 16px;
+            }
         }
     }
     &__box p {
