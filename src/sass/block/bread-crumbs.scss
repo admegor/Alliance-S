@@ -1,0 +1,49 @@
+.bread-crumbs {
+    margin-bottom: 90px;
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        @include list-reset;
+    }
+    &__item:not(:last-child) {
+        margin-right: 25px;
+    }
+    &__item {
+        position: relative;
+        font-weight: 500;
+        &:not(:last-child)::before {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 2px;
+            background-color: $font-color;
+            top: 8px;
+            right: -15px;
+            transform: rotate(-135deg);
+        }
+        &:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 2px;
+            background-color: $font-color;
+            top: 14px;
+            right: -15px;
+            transform: rotate(-45deg);
+        }
+    }
+    &__item:last-child {
+        font-weight: 700;
+    }
+    &__link {
+        text-decoration: none;
+        color: $font-color;
+        font-weight: inherit;
+        @include adaptiv-font(18, 14);
+        white-space: nowrap;
+        transition: .2s all ease-in;
+        &:hover {
+            color: $accent;
+        }
+    }
+}

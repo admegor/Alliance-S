@@ -1,0 +1,114 @@
+.catalog-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: -90px;
+    @include md {
+        flex-direction: column;
+        margin-top: -50px;
+        margin-bottom: 10px;
+    }
+    &__item {
+        color: inherit;
+        background-color: $bg-cold;
+        padding: 40px 50px;
+        border: 1px solid #CFE1E9;
+        border-radius: 50px;        
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-height: 400px;
+        @include md {
+            border-radius: 30px;
+            padding: 30px 18px 30px 10px;
+            max-height: 340px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 52px;
+            height: 52px;
+            bottom: 20px;
+            right: 20px;
+            background: url("../../img/icon-arrow.svg") no-repeat center;
+            @include md {
+                bottom: 0px;
+                right: 0px;
+                transform: scale(0.6);
+            }
+        }
+    }
+    &__item + &__item {
+        @include md {
+            margin-top: 10px;
+        }
+    }
+    &__img {
+        max-height: 300px;
+        @include md {
+            max-height: 200px;
+        }
+    }
+    &__title {
+        position: absolute;
+        top: 38px;
+        left: 50px;
+        max-width: 145px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: 0;
+        @include adaptiv-font(16, 12);
+    }
+}
+.home-catalog__list-top.catalog-list {
+    gap: 2%;
+    .catalog-list__item {
+        width: 32%;
+        @include md {
+            width: 100%;
+            gap: 0;
+        }
+    }
+}
+.home-catalog__list-bottom.catalog-list {
+    margin-top: 30px;
+    gap: 2%;
+    @include md {
+        margin-top: 0;
+    }
+    .catalog-list__item {
+        &:nth-child(1) {
+            width: 48%;
+        }
+        &:nth-child(2) {
+            width: 29%;
+        }
+        &:nth-child(3) {
+            width: 19%;
+            background-color: $accent;
+            color: #fff;
+            text-transform: uppercase;
+            text-wrap: nowrap;
+            text-decoration: none;
+            &::after {
+                content: none;
+            }
+        }
+        @include md {
+            margin-top: 10px;
+            &:nth-child(1) {
+                margin-top: 0;
+                width: 100%;
+            }
+            &:nth-child(2) {
+                width: 100%;
+            }
+            &:nth-child(3) {
+                width: 100%;
+            }
+            width: 100%;
+            gap: 0;
+        }
+    }
+}

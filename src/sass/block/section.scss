@@ -1,0 +1,11 @@
+.section {
+    border-radius: 50px;
+    &--archive-singe {
+        background-color: $secondary-light;
+        padding: 37px 50px 120px 50px;
+    }
+    &--archive-item {
+        background-color: #fff;
+        padding: 80px 100px 80px 85px;
+    }
+}

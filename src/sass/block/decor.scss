@@ -1,0 +1,47 @@
+.decor {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    display: flex;
+    z-index: 1;
+    @include md {
+        top: 53px;
+        right: 0;
+        left: initial;
+    }
+    &__circle1 {
+        display: block;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: #D0D9D4;
+        @include md {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    &__circle2 {
+        display: block;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: #9DB0A5;
+        margin-left: -10px;
+        @include md {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    &__circle3 {
+        display: block;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: #6B8676;
+        margin-left: -10px;
+        @include md {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
