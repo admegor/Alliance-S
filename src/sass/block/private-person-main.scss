@@ -1,0 +1,44 @@
+.private-person-main {
+    &__wrap {
+        padding: 50px;
+        border-radius: 50px;
+        @include md {
+            padding: 10px;
+            border-radius: 30px;
+        }
+    }
+    &__inner-wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 65px;
+        @include md {
+            margin-right: 0;
+            flex-direction: column;
+        }
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        margin: 0;
+        color: #0D242C;
+        text-transform: uppercase;
+        @include adaptiv-font(16, 10);
+        font-weight: 600;
+        margin-right: 90px;
+    }
+    &__counter {
+        color: $accent;
+        font-family: "ProstoOne", Arial, Helvetica, sans-serif;
+        line-height: 1.3;
+        @include md {
+            display: none;
+        }
+    }
+    &__text {
+        display: inline-block;
+        margin: 0;
+        @include adaptiv-font(48, 20);
+    }
+}
