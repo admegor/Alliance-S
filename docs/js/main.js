@@ -15,17 +15,18 @@
   \************************/
 /***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
-eval("const menu = __webpack_require__(/*! ./module/menu.js */ \"./src/js/module/menu.js\");\n\n//# sourceURL=webpack://y/./src/js/main.js?");
+"use strict";
+eval("\r\nconst portfolioSlider = __webpack_require__(/*! ./module/portfolio.js */ \"./src/js/module/portfolio.js\");\n\n//# sourceURL=webpack://y/./src/js/main.js?");
 
 /***/ }),
 
-/***/ "./src/js/module/menu.js":
-/*!*******************************!*\
-  !*** ./src/js/module/menu.js ***!
-  \*******************************/
+/***/ "./src/js/module/portfolio.js":
+/*!************************************!*\
+  !*** ./src/js/module/portfolio.js ***!
+  \************************************/
 /***/ (function() {
 
-eval("const burgerBtn = document.querySelector(\".nav-header-burger\");\nconst navHeader = document.querySelector(\".nav-header\");\nconst submenuLists = document.querySelectorAll(\".has-submenu\");\n\nfunction menu() {\n\n    burgerBtn.addEventListener('click', (el) => {\n        el.preventDefault();\n        burgerBtn.classList.toggle('active');\n        if (burgerBtn.classList.contains('active')) {\n            navHeader.classList.add('open');\n        } else {\n            navHeader.classList.remove('open');\n        }\n    }) \n    \n    for (let submenuList of submenuLists) {\n        submenuList.addEventListener('click', (e) => {\n            e.preventDefault();\n            for (let i = 0; i < submenuLists.length; i++) {\n                console.log(submenuLists[i]);\n                if (submenuLists[i].classList.contains('open')) {\n                    submenuLists[i].classList.remove('open');\n                }\n            }\n            submenuList.classList.add('open');\n        })\n    }\n}\nmenu();\n\n//# sourceURL=webpack://y/./src/js/module/menu.js?");
+eval("let $sliderPortfolio = $('.portfolio-main-list');\r\n\r\n// if ($(window).width() < 768) {\r\n//     console.log('активировать слайдер1');\r\n//     $sliderPortfolio.not('.slick-initialized').slick({\r\n//         dots: false,\r\n//         infinite: false,\r\n//         speed: 100,\r\n//         slidesToShow: 1,\r\n//         slidesToScroll: 1,\r\n//         arrows: false,\r\n//         variableWidth: true\r\n//     });\r\n// } else {\r\n//     $sliderPortfolio.filter('.slick-initialized').slick('unslick');\r\n//     console.log('убрать слайдер1');\r\n// }\r\n\r\n$(window).on('load resize', function() {\r\n    if ($(window).width() < 768) {\r\n        console.log('активировать слайдер2');\r\n        $sliderPortfolio.not('.slick-initialized').slick({\r\n            dots: false,\r\n            infinite: false,\r\n            speed: 100,\r\n            slidesToShow: 1,\r\n            slidesToScroll: 1,\r\n            arrows: false,\r\n            variableWidth: true\r\n        });\r\n    } else {\r\n        console.log('убрать слайдер2');\r\n        $sliderPortfolio.filter('.slick-initialized').slick('unslick');\r\n    }\r\n});\n\n//# sourceURL=webpack://y/./src/js/module/portfolio.js?");
 
 /***/ })
 

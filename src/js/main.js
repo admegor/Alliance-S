@@ -1,1 +1,2 @@
-const menu = require("./module/menu.js");
+"use strict";
+const portfolioSlider = require("./module/portfolio.js");
