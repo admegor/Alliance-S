@@ -1,0 +1,6 @@
+.complete-project {
+    padding-bottom: 130px;
+    @include md {
+        padding-bottom: 50px;
+    }
+}

@@ -1,0 +1,93 @@
+.reviews-main-list {
+    margin-top: -84px;
+    display: flex;
+    @include md {
+        margin-top: -58px;
+    }
+    &__item {
+        background-color: #D0D9D4;
+        padding: 50px;
+        border-radius: 50px;
+        background-color: #D0D9D4;
+        transition: all ease-in .3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        height: 557px;
+        max-width: 400px;
+        &:hover .reviews-main-list__arrow rect {
+            transition: all ease-in .3s;
+            fill: #fff;
+        }
+        &:hover .reviews-main-list__arrow circle {
+            transition: all ease-in .3s;
+            fill: #AA7D54;
+        }
+        &:hover {
+            background-color: #9DB0A5;
+        }
+        @include md {
+            padding: 25px;
+            border-radius: 30px;
+            max-width: 260px;
+            height: 405px;
+        }
+    }
+    &__item + &__item {
+        margin-left: 40px;
+        @include md {
+            margin-left: 10px;
+        }
+    }
+    &__item p {
+        display: inline-block;
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 50px;
+        color: #0D242C;
+        @include adaptiv-font(16,12);
+        font-weight: 600;
+        text-align: start;
+        text-transform: uppercase;
+        @include md {
+            padding: 25px;
+        }
+    }
+}
+.reviews-main-list .slick-track {
+    display: flex;
+}
+.reviews-main-list .slick-arrow {
+    position: absolute;
+    top: -140px;
+    font-size: 0;
+    height: 56px;
+    width: 56px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    @include md {
+        top: initial;
+        bottom: -80px;
+    }
+}
+.reviews-main-list .slick-prev {
+    right: 120px;
+    background: url("../img/icon-slide-arrow-left-active.svg") no-repeat center;
+    @include md {
+        right: 60%;
+    }
+}
+.reviews-main-list .slick-next {
+    right: 50px;
+    background: url("../img/icon-slide-arrow-right-active.svg") no-repeat center;
+    @include md {
+        right: 40%;
+    }
+}

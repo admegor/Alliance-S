@@ -1,0 +1,186 @@
+.footer {
+    padding-bottom: 100px;
+    @include md {
+        padding-bottom: 50px;
+    }
+    &__wrap {
+        background-color: #6B8676;
+        padding: 77px 50px 20px;
+        border-radius: 50px;
+        @include md {
+            border-radius: 30px;
+            padding: 10px 10px 20px;
+        }
+    }
+    &__wrap-top {
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        @include xl {
+            flex-direction: column;
+        }
+        @include md {
+            padding-bottom: 20px;
+        }
+    }
+    &__wrap-content {
+        display: flex;
+        width: 50%;
+        @include xl {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        @include md {
+            margin-bottom: 10px;
+        }
+    }
+    &__nav-wrap {
+        padding: 30px;
+        border-radius: 50px;
+        background-color: #FCF7F7;
+        max-width: 342px;
+        width: 50%;
+        margin-right: 40px;
+        @include xl {
+            max-width: initial;
+        }
+        @include md {
+            border-radius: 30px;
+            padding: 30px 10px;
+            margin-right: 10px;
+        }
+    }
+    &__logo-link {
+        display: inline-block;
+        margin-bottom: 60px;
+        @include md {
+            margin-bottom: 20px;
+        }
+    }
+    &__nav ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        padding-left: 20%;
+        @include md {
+            padding-left: 0;
+        }
+    }
+    &__nav ul li:not(:first-child) {
+        margin-top: 25px;
+        @include md {
+            margin-top: 18px;
+        }
+    }
+    &__nav ul li a {
+        text-decoration: none;
+        color: #0D242C;
+    }
+    &__contacts-wrap {
+        border-radius: 50px;
+        background-color: #9DB0A5;
+        padding: 45px 35px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        font-style: normal;
+        & a {
+            color: inherit;
+            text-decoration: none;
+        }
+        @include md {
+            border-radius: 30px;
+            height: initial;
+            padding: 30px 10px;
+        }
+    }
+    &__title {
+        margin: 0;
+        color: #0D242C;
+        margin-bottom: 12px;
+    }
+    &__address {
+        max-width: 180px;
+        margin: 0;
+        margin-bottom: 35px;
+        color: #0D242C;
+    }
+    &__call {
+        background-color: transparent;
+        color: #0D242C;
+        border-color: #0D242C;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include adaptiv-font(16,12);
+        & svg {
+            margin-left: 10px;
+        }
+        @include md {
+            display: none;
+        }
+    }
+    &__call-mobile {
+        display: none;
+        @include md {
+            background-color: #3C4F54;
+            color: #fff;
+            border-color: #3C4F54;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+    &__contacts-wrap a {
+        display: block;
+    }
+    &__tel + &__tel {
+        margin-bottom: auto;
+        margin-top: 2px;
+    }
+    &__email {
+        margin-bottom: 12px;
+    }
+    &__map {
+        border-radius: 50px;
+        overflow: hidden;
+        width: 50%;
+        @include xl {
+            width: 100%;
+            height: 370px;
+        }
+        @include md {
+            border-radius: 30px;
+        }
+    }
+    &__contacts-inner {
+        width: 50%;
+        margin-right: 40px;
+        @include xl {
+            margin-right: 0;
+        }
+        @include md {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    &__wrap-copyright {
+        display: flex;
+        align-items: center;
+        & p,
+        & a {
+            margin: 0;
+            color: #A3B5AA;
+            text-decoration: none;
+            margin-right: 13px;
+        }
+        @include md {
+            flex-direction: column;
+        }
+    }
+
+}

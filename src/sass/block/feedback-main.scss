@@ -1,0 +1,117 @@
+.feedback-main {
+    padding-bottom: 100px;
+    @include md {
+        padding-bottom: 50px;
+    }
+    &__top.section-top {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        padding-bottom: 30px;
+        @include md {
+            padding-bottom: 16px;
+        }
+    }
+    &__content {
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        background-color: #fcf7f7;
+        padding: 0 50px 100px;
+        padding-left: 25%;
+        position: relative;
+        @include md {
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            padding: 0 10px 70px 10px;
+        }
+    }
+    &__subtitle-secondary {
+        margin: 0;
+        max-width: 380px;
+        padding-bottom: 40px;
+        @include md {
+            padding-bottom: 30px;
+        }
+    }
+    &__submit {
+        background-color: $accent;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        width: 28%;
+        transition: all ease-in .3s;
+        &:hover {
+            background-color: $accent-hover;
+        }
+        &:active {
+            background-color: $accent-click;
+        }
+        & svg {
+            margin-left: 7px;
+        }
+        @include md {
+            width: 100%;
+            height: 60px;
+            margin-top: 10px;
+        }
+    }
+    &__form {
+        display: flex;
+        @include md {
+            flex-direction: column;
+        }
+    }
+    &__form input {
+        border: 2px solid $accent;
+        background-color: transparent;
+        padding-left: 43px;
+        padding-top: 5px;
+        height: 85px;
+        border-radius: 50px;
+        max-width: 411px;
+        width: 100%;
+        &:not(:first-child) {
+            margin-top: 30px;
+            @include md {
+                margin-top: 10px;
+            }
+        }
+        &::placeholder {
+            color: $accent;
+        }
+        @include md {
+            width: 100%;
+            max-width: initial;
+            height: 60px;
+        }
+    }
+    &__form-wrap {
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
+        flex-grow: 1;
+        &:first-child {
+            margin-right: 25px;
+            @include md {
+                margin-right: 0;
+            }
+        }
+        @include md {
+            margin: 0;
+            margin-top: 10px;
+        }
+    }
+    &__after-form {
+        color: #0D242C;
+        font-weight: 400;
+        @include adaptiv-font(14, 12);
+        width: 230px;
+        position: absolute;
+        bottom: 10px;
+        right: 6%;
+        @include md {
+            right: calc(50% - 118px);
+        };
+    }
+}

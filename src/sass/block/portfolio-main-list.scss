@@ -155,13 +155,12 @@
     }
     &__img-wrap {
         border-radius: 34px;
-        // background: url("../../img/portfolio-main-img1.jpg") no-repeat center center cover;
         background-image: url("../../img/portfolio-main-img1.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         width: 100%;
-        max-height: 320px;
+        // max-height: 320px;
         @include md {
             border-radius: 30px;
         }
