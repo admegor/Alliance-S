@@ -16,7 +16,7 @@
 /***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
-eval("\nconst portfolioSlider = __webpack_require__(/*! ./module/portfolio.js */ \"./src/js/module/portfolio.js\");\nconst companySlider = __webpack_require__(/*! ./module/company.js */ \"./src/js/module/company.js\");\nconst categoryNavSlider = __webpack_require__(/*! ./module/category-nav.js */ \"./src/js/module/category-nav.js\");\n\n//# sourceURL=webpack://y/./src/js/main.js?");
+eval("\nconst portfolioSlider = __webpack_require__(/*! ./module/portfolio.js */ \"./src/js/module/portfolio.js\");\nconst companySlider = __webpack_require__(/*! ./module/company.js */ \"./src/js/module/company.js\");\nconst categoryNavSlider = __webpack_require__(/*! ./module/category-nav.js */ \"./src/js/module/category-nav.js\");\nconst certificatesSlider = __webpack_require__(/*! ./module/certificates.js */ \"./src/js/module/certificates.js\");\nconst menu = __webpack_require__(/*! ./module/menu.js */ \"./src/js/module/menu.js\");\n\n//# sourceURL=webpack://y/./src/js/main.js?");
 
 /***/ }),
 
@@ -30,6 +30,16 @@ eval("let $sliderCategoryNav = $('.category-nav');\r\n\r\n$(window).on('load res
 
 /***/ }),
 
+/***/ "./src/js/module/certificates.js":
+/*!***************************************!*\
+  !*** ./src/js/module/certificates.js ***!
+  \***************************************/
+/***/ (function() {
+
+eval("let $sliderFeedback = $('.certificates-page__slider');\r\n\r\n\r\n\r\n$sliderFeedback.slick({\r\n    dots: false,\r\n    infinite: false,\r\n    speed: 300,\r\n    slidesToShow: 4,\r\n    slidesToScroll: 1,\r\n    arrows: true,\r\n    responsive: [\r\n        {\r\n          breakpoint: 1024,\r\n          settings: {\r\n            slidesToShow: 3,\r\n          }\r\n        },\r\n        {\r\n          breakpoint: 768,\r\n          settings: {\r\n            slidesToShow: 1,\r\n            variableWidth: true\r\n          }\r\n        }\r\n      ]\r\n});\n\n//# sourceURL=webpack://y/./src/js/module/certificates.js?");
+
+/***/ }),
+
 /***/ "./src/js/module/company.js":
 /*!**********************************!*\
   !*** ./src/js/module/company.js ***!
@@ -37,6 +47,16 @@ eval("let $sliderCategoryNav = $('.category-nav');\r\n\r\n$(window).on('load res
 /***/ (function() {
 
 eval("let $sliderFeedback = $('.reviews-main-list');\n\n\n\n$sliderFeedback.slick({\n    dots: false,\n    infinite: false,\n    speed: 300,\n    slidesToShow: 4,\n    slidesToScroll: 1,\n    arrows: true,\n    responsive: [\n        {\n          breakpoint: 1024,\n          settings: {\n            slidesToShow: 3,\n          }\n        },\n        {\n          breakpoint: 768,\n          settings: {\n            slidesToShow: 1,\n            variableWidth: true\n          }\n        }\n      ]\n});\n\n//# sourceURL=webpack://y/./src/js/module/company.js?");
+
+/***/ }),
+
+/***/ "./src/js/module/menu.js":
+/*!*******************************!*\
+  !*** ./src/js/module/menu.js ***!
+  \*******************************/
+/***/ (function() {
+
+eval("const burgerBtn = document.querySelector(\".nav-header-burger\");\nconst navHeader = document.querySelector(\".header__menu\");\nconst submenuLists = document.querySelectorAll(\".has-submenu\");\n\nfunction menu() {\n\n    burgerBtn.addEventListener('click', (el) => {\n        el.preventDefault();\n        console.log(\"ckick!\");\n        burgerBtn.classList.toggle('active');\n        if (burgerBtn.classList.contains('active')) {\n            navHeader.classList.add('open');\n        } else {\n            navHeader.classList.remove('open');\n        }\n    }) \n    \n    for (let submenuList of submenuLists) {\n        submenuList.addEventListener('click', (e) => {\n            e.preventDefault();\n            for (let i = 0; i < submenuLists.length; i++) {\n                console.log(submenuLists[i]);\n                if (submenuLists[i].classList.contains('open')) {\n                    submenuLists[i].classList.remove('open');\n                }\n            }\n            submenuList.classList.add('open');\n        })\n    }\n}\nmenu();\n\n//# sourceURL=webpack://y/./src/js/module/menu.js?");
 
 /***/ }),
 

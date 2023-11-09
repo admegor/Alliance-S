@@ -7,6 +7,8 @@
         background-color: $bg;
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
+        position: sticky;
+        top: 0;
     }
     &__box {
         padding-left: 212px;

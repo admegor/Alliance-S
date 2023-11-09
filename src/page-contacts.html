@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Альянс-С - Контакты</title>
+    <link rel="stylesheet" href="css/build.min.css">
+</head>
+
+<body>
+    <!-- @@include("html/chunk/header.html") -->
+    <main class="main">
+        <section class="archive-cat-hero">
+            <div class="container">
+                <div class="archive-cat-hero__wrap">
+                    <div class="decor">
+                        <div class="decor__circle1"></div>
+                        <div class="decor__circle2"></div>
+                        <div class="decor__circle3"></div>
+                    </div>
+                    <div class="archive-cat-hero__title-wrap">
+                        <h1 class="archive-cat-hero__title">Наши контакты</span></h1>
+                    </div>
+                    <div class="bread-crumbs">
+                        <ul class="bread-crumbs__list">
+                            <li class="bread-crumbs__item">
+                                <a class="bread-crumbs__link" href="#">Главная</a>
+                            </li>
+                            <li class="bread-crumbs__item">
+                                <span class="bread-crumbs__link">Контакты</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts-page">
+            <div class="container">
+                <div class="contacts-page__wrap">
+                    <div class="contacts-page__top">
+                        <address class="contacts-page__address">
+                            <div class="contacts-page__address-item">
+                                <h2 class="contacts-page__title">Адрес</h2>
+                                <div class="contacts-page__content">
+                                    <p>454003, г. Челябинск, ул. Петра Сумина, 8, помещение 3</p>
+                                </div>
+                            </div>
+                            <div class="contacts-page__address-item">
+                                <h2 class="contacts-page__title">Связаться</h2>
+                                <div class="contacts-page__content">
+                                    <a href="mailto:nfo@ptkalm.ru">nfo@ptkalm.ru</a>
+                                    <a href="tel:+73512220075">+7 351 222 00 75</a>
+                                    <a href="tel:+73512220076">+7 351 222 00 76</a>
+                                </div>
+                            </div>
+                            <div class="contacts-page__address-item">
+                                <h2 class="contacts-page__title">Реквизиты</h2>
+                                <div class="contacts-page__content">
+                                    <p>ИНН 7449066000</p>
+                                    <p>КПП 745301001</p>
+                                </div>
+                            </div>
+                            <div class="contacts-page__address-item">
+                                <h2 class="contacts-page__title">Режим работы</h2>
+                                <div class="contacts-page__content">
+                                    <p>Будни 9:00-18:00</p>
+                                </div>
+                            </div>
+                        </address>
+                    </div>
+                    <div class="contacts-page__map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0a6ab39bb2c6b98c9c7f5d46aeb113f6d530d678d39a9f55b69ceb8924dd768b&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="feedback-main">
+            <div class="container">
+                <div class="feedback-main__top section-top">
+                    <h2 class="feedback-main__title section-top__title">обратная связь</h2>
+                    <p class="feedback-main__subtitle section-top__subtitle">Давайте обсудим <span class="section-top__accent">какая мебель вам нужна</span></p>
+                    <div class="feedback-main__counter section-top__counter">/09</div>
+                </div>
+                <div class="feedback-main__content">
+                    <p class="feedback-main__subtitle-secondary">Оставьте заявку, в ближайшее время мы свяжемся с вами и ответим на ваши вопросы</p>
+                    <form class="feedback-main__form" action="POST">
+                        <div class="feedback-main__form-wrap">
+                            <input type="text" name="name" id="name" placeholder="Ваше имя">
+                            <input type="tel" name="tel" id="tel" placeholder="Ваш телефон">
+                        </div>
+                        <div class="feedback-main__form-wrap">
+                            <input type="email" name="email" id="email" placeholder="Ваш email">
+                            <input type="text" name="activity" id="activity" placeholder="Сфера деятельности">
+                        </div>
+                        <button class="feedback-main__submit btn" type="submit">
+                            Отправить заявку
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.903809" y="8.9043" width="14" height="2" fill="white"/>
+                                <rect x="11.3179" y="0.904297" width="11" height="2" transform="rotate(45 11.3179 0.904297)" fill="white"/>
+                                <rect x="19.0952" y="11.3184" width="11" height="2" transform="rotate(135 19.0952 11.3184)" fill="white"/>
+                            </svg>
+                        </button>
+                    </form>
+                    <p class="feedback-main__after-form">Нажимая кнопку, вы даете согласие<br> на обработку персональных данных</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include("html/chunk/footer.html")
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js" defer></script>
+</script>
+</body>
+
+</html>

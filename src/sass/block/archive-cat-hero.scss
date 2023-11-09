@@ -23,6 +23,7 @@
         position: relative;
         @include md {
             border-radius: 30px;
+            padding: 80px 20px 130px;
         }
     }
     &__wrap .decor {

@@ -1,4 +1,43 @@
 .nav-header {
+    @include lg {
+        display: none;
+        // display: block;
+    }
+    @include xl {
+        &.open {
+            display: block;
+        }
+        display: none;
+        position: absolute;
+        top: 100px;
+        z-index: 10;
+        background-color: $accent;
+        width: 100%;
+        left: 0;
+        border-radius: 30px;
+        &__list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        & li:not(:first-child) {
+            margin-left: 50px;
+        }
+        & li {
+            margin: 15px 50px;
+        }
+        & li a {
+            color: #fff;
+        
+        }
+    }
+    &.open {
+            display: none;
+        }
+    @include md {
+        top: 80px;
+    }
+    
     &__list {
         display: flex;
         align-items: center;

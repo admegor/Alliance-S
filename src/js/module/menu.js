@@ -1,11 +1,12 @@
 const burgerBtn = document.querySelector(".nav-header-burger");
-const navHeader = document.querySelector(".nav-header");
+const navHeader = document.querySelector(".header__menu");
 const submenuLists = document.querySelectorAll(".has-submenu");
 
 function menu() {
 
     burgerBtn.addEventListener('click', (el) => {
         el.preventDefault();
+        console.log("ckick!");
         burgerBtn.classList.toggle('active');
         if (burgerBtn.classList.contains('active')) {
             navHeader.classList.add('open');
