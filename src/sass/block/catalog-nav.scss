@@ -1,0 +1,46 @@
+.catalog-nav {
+    & ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    & ul li + li {
+        margin-top: 40px;
+    }
+    & a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+        color: #0D242C;
+        text-transform: uppercase;
+        @include adaptiv-font(16, 12);
+        border-radius: 50px;
+        background-color: #9DB0A5;
+        cursor: pointer;
+        padding: 3em;
+        transition: all ease-in .3s;
+        &:hover {
+            background-color: #849b8d;
+        }
+    }
+    & a svg {
+        margin-left: 20px;
+        min-width: 21px;
+    }
+    &--active a {
+        background-color: #AA7D54;
+        color: #fff;
+        & svg rect {
+            fill: #fff;
+        }
+        &:hover {
+            background-color: #AA7D54;
+        }
+    }
+    &__list {
+        width: 66%;
+    }
+}

@@ -1,0 +1,34 @@
+.archive-cat-hero {
+    &__title {
+        font-family: "ProstoOne", Arial, Helvetica, sans-serif;
+        line-height: 1.3;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin: 0;
+        @include adaptiv-font(60, 30);
+        margin-bottom: 30px;
+        max-width: 70%;
+        @include md {
+            margin-bottom: 20px;
+            max-width: initial;
+        }
+        &--accent {
+            color: $accent;
+        }
+    }
+    &__wrap {
+        border-radius: 50px;
+        background-color: #FCF7F7;
+        padding: 80px 50px 130px;
+        position: relative;
+        @include md {
+            border-radius: 30px;
+        }
+    }
+    &__wrap .decor {
+        top: 22px;
+        bottom: initial;
+        right: 20px;
+        left: initial;
+    }
+}

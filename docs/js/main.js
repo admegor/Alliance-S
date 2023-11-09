@@ -16,7 +16,27 @@
 /***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nconst portfolioSlider = __webpack_require__(/*! ./module/portfolio.js */ \"./src/js/module/portfolio.js\");\n\n//# sourceURL=webpack://y/./src/js/main.js?");
+eval("\nconst portfolioSlider = __webpack_require__(/*! ./module/portfolio.js */ \"./src/js/module/portfolio.js\");\nconst companySlider = __webpack_require__(/*! ./module/company.js */ \"./src/js/module/company.js\");\nconst categoryNavSlider = __webpack_require__(/*! ./module/category-nav.js */ \"./src/js/module/category-nav.js\");\n\n//# sourceURL=webpack://y/./src/js/main.js?");
+
+/***/ }),
+
+/***/ "./src/js/module/category-nav.js":
+/*!***************************************!*\
+  !*** ./src/js/module/category-nav.js ***!
+  \***************************************/
+/***/ (function() {
+
+eval("let $sliderCategoryNav = $('.category-nav');\r\n\r\n$(window).on('load resize', function() {\r\n    if ($(window).width() < 768) {\r\n        $sliderCategoryNav.not('.slick-initialized').slick({\r\n            dots: false,\r\n            infinite: false,\r\n            speed: 100,\r\n            slidesToShow: 1,\r\n            slidesToScroll: 1,\r\n            arrows: false,\r\n            variableWidth: true\r\n        });\r\n    } else {\r\n        $sliderCategoryNav.filter('.slick-initialized').slick('unslick');\r\n    }\r\n});\n\n//# sourceURL=webpack://y/./src/js/module/category-nav.js?");
+
+/***/ }),
+
+/***/ "./src/js/module/company.js":
+/*!**********************************!*\
+  !*** ./src/js/module/company.js ***!
+  \**********************************/
+/***/ (function() {
+
+eval("let $sliderFeedback = $('.reviews-main-list');\n\n\n\n$sliderFeedback.slick({\n    dots: false,\n    infinite: false,\n    speed: 300,\n    slidesToShow: 4,\n    slidesToScroll: 1,\n    arrows: true,\n    responsive: [\n        {\n          breakpoint: 1024,\n          settings: {\n            slidesToShow: 3,\n          }\n        },\n        {\n          breakpoint: 768,\n          settings: {\n            slidesToShow: 1,\n            variableWidth: true\n          }\n        }\n      ]\n});\n\n//# sourceURL=webpack://y/./src/js/module/company.js?");
 
 /***/ }),
 
@@ -26,7 +46,7 @@ eval("\r\nconst portfolioSlider = __webpack_require__(/*! ./module/portfolio.js 
   \************************************/
 /***/ (function() {
 
-eval("let $sliderPortfolio = $('.portfolio-main-list');\r\n\r\n$(window).on('load resize', function() {\r\n    if ($(window).width() < 768) {\r\n        $sliderPortfolio.not('.slick-initialized').slick({\r\n            dots: false,\r\n            infinite: false,\r\n            speed: 100,\r\n            slidesToShow: 1,\r\n            slidesToScroll: 1,\r\n            arrows: false,\r\n            variableWidth: true\r\n        });\r\n    } else {\r\n        $sliderPortfolio.filter('.slick-initialized').slick('unslick');\r\n    }\r\n});\n\n//# sourceURL=webpack://y/./src/js/module/portfolio.js?");
+eval("let $sliderPortfolio = $('.portfolio-main-list');\n\n$(window).on('load resize', function() {\n    if ($(window).width() < 768) {\n        $sliderPortfolio.not('.slick-initialized').slick({\n            dots: false,\n            infinite: false,\n            speed: 100,\n            slidesToShow: 1,\n            slidesToScroll: 1,\n            arrows: false,\n            variableWidth: true\n        });\n    } else {\n        $sliderPortfolio.filter('.slick-initialized').slick('unslick');\n    }\n});\n\n//# sourceURL=webpack://y/./src/js/module/portfolio.js?");
 
 /***/ })
 

@@ -5,89 +5,268 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Альянс-С - каталог мебели</title>
+    <title>Альянс-С - каталог мебели для дошкольных учреждений</title>
     <link rel="stylesheet" href="css/build.min.css">
 </head>
 
 <body>
     <!-- @@include("html/chunk/header.html") -->
     <main class="main">
-        <section class="archive-hero">
+        <section class="archive-cat-hero">
             <div class="container">
-                <div class="archive-hero__container">
-                    <div class="archive-hero__box">
-                        <div class="archive-hero__title-wrap">
-                            <h1 class="archive-hero__title">Каталог мебели</h1>
-                            <div class="decor">
-                                <div class="decor__circle1"></div>
-                                <div class="decor__circle2"></div>
-                                <div class="decor__circle3"></div>
-                            </div>
-                        </div>
-                        <div class="bread-crumbs">
-                            <ul class="bread-crumbs__list">
-                                <li class="bread-crumbs__item">
-                                    <a class="bread-crumbs__link" href="#">Главная</a>
-                                </li>
-                                <li class="bread-crumbs__item">
-                                    <span class="bread-crumbs__link">Каталог мебели</span>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="archive-cat-hero__wrap">
+                    <div class="decor">
+                        <div class="decor__circle1"></div>
+                        <div class="decor__circle2"></div>
+                        <div class="decor__circle3"></div>
+                    </div>
+                    <div class="archive-cat-hero__title-wrap">
+                        <h1 class="archive-cat-hero__title">Каталог мебели <span class="archive-cat-hero__title--accent">для дошкольных учреждений</span></h1>
+                    </div>
+                    <div class="bread-crumbs">
+                        <ul class="bread-crumbs__list">
+                            <li class="bread-crumbs__item">
+                                <a class="bread-crumbs__link" href="#">Главная</a>
+                            </li>
+                            <li class="bread-crumbs__item">
+                                <a class="bread-crumbs__link" href="#">Каталог мебели</a>
+                            </li>
+                            <li class="bread-crumbs__item">
+                                <span class="bread-crumbs__link">Каталог мебели для дошкольных учреждений</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="archive">
+        <section class="category-nav__section">
             <div class="container">
-                <div class="archive__list">
-                    <a class="archive__link" href="#">
-                        <h3 class="archive__title">Мебель для дошкольных учреждений</h3>
-                        <div class="archive__image-wrap">
-                            <img class="archive__image" src="img/archive-1.jpg" alt="">
+                <div class="category-nav__wrap">
+                    <nav class="category-nav">
+                        <div class="category-nav__container">
+                            <a class="category-nav__link" href="#">
+                                <div class="category-nav__title">Столы</div>
+                                <div class="category-nav__image-wrap">
+                                    <img class="category-nav__image" src="img/category-1.png" alt="">
+                                </div>
+                            </a>
+                            <a class="category-nav__link" href="#">
+                                <div class="category-nav__title">Системы хранения</div>
+                                <div class="category-nav__image-wrap">
+                                    <img class="category-nav__image" src="img/category-2.png" alt="">
+                                </div>
+                            </a>
+                            <a class="category-nav__link" href="#">
+                                <div class="category-nav__title">Игровая мебель</div>
+                                <div class="category-nav__image-wrap">
+                                    <img class="category-nav__image" src="img/category-3.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="category-nav__container">
+                            <a class="category-nav__link" href="#">
+                                <div class="category-nav__title">Стулья</div>
+                                <div class="category-nav__image-wrap">
+                                    <img class="category-nav__image" src="img/category-4.png" alt="">
+                                </div>
+                            </a>
+                            <a class="category-nav__link" href="#">
+                                <div class="category-nav__title">Стенки, стеллажи, тумбы</div>
+                                <div class="category-nav__image-wrap">
+                                    <img class="category-nav__image" src="img/category-5.png" alt="">
+                                </div>
+                            </a>
+                            <a class="category-nav__link" href="#">
+                                <div class="category-nav__title">Полотенечницы и горшечницы</div>
+                                <div class="category-nav__image-wrap">
+                                    <img class="category-nav__image" src="img/category-6.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="category-nav__container">
+                            <a class="category-nav__link" href="#">
+                                <div class="category-nav__title">Кровати</div>
+                                <div class="category-nav__image-wrap">
+                                    <img class="category-nav__image" src="img/category-3.png" alt="">
+                                </div>
+                            </a>
+                            <a class="category-nav__link" href="#">
+                                <div class="category-nav__title">Шкафы</div>
+                                <div class="category-nav__image-wrap">
+                                    <img class="category-nav__image" src="img/category-2.png" alt="">
+                                </div>
+                            </a>
+                            <a class="category-nav__link" href="#">
+                                <div class="category-nav__title">Скамейки, банкетки, пуфы
+                                </div>
+                                <div class="category-nav__image-wrap">
+                                    <img class="category-nav__image" src="img/category-1.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-archive">
+            <div class="container">
+                <aside class="sidebar content-archive__sidebar">
+                    <nav class="catalog-nav">
+                        <ul>
+                            <li class="catalog-nav--active">
+                                <a href="#">
+                                    Мебель для дошкольных учреждений
+                                    <svg width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="20.1094" y="1.70691" width="11.728" height="2.34561" transform="rotate(135 20.1094 1.70691)" fill="#0D242C"/>
+                                        <rect x="8.50781" y="9.95117" width="11.728" height="2.34561" transform="rotate(-135 8.50781 9.95117)" fill="#0D242C"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Мебель для школы и ВУЗов
+                                    <svg width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="20.1094" y="1.70691" width="11.728" height="2.34561" transform="rotate(135 20.1094 1.70691)" fill="#0D242C"/>
+                                        <rect x="8.50781" y="9.95117" width="11.728" height="2.34561" transform="rotate(-135 8.50781 9.95117)" fill="#0D242C"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Офисная мебель
+                                    <svg width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="20.1094" y="1.70691" width="11.728" height="2.34561" transform="rotate(135 20.1094 1.70691)" fill="#0D242C"/>
+                                        <rect x="8.50781" y="9.95117" width="11.728" height="2.34561" transform="rotate(-135 8.50781 9.95117)" fill="#0D242C"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Мебель для медицинских учреждений
+                                    <svg width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="20.1094" y="1.70691" width="11.728" height="2.34561" transform="rotate(135 20.1094 1.70691)" fill="#0D242C"/>
+                                        <rect x="8.50781" y="9.95117" width="11.728" height="2.34561" transform="rotate(-135 8.50781 9.95117)" fill="#0D242C"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Хозяйственная мебель
+                                    <svg width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="20.1094" y="1.70691" width="11.728" height="2.34561" transform="rotate(135 20.1094 1.70691)" fill="#0D242C"/>
+                                        <rect x="8.50781" y="9.95117" width="11.728" height="2.34561" transform="rotate(-135 8.50781 9.95117)" fill="#0D242C"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Кухни
+                                    <svg width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="20.1094" y="1.70691" width="11.728" height="2.34561" transform="rotate(135 20.1094 1.70691)" fill="#0D242C"/>
+                                        <rect x="8.50781" y="9.95117" width="11.728" height="2.34561" transform="rotate(-135 8.50781 9.95117)" fill="#0D242C"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+                <div class="content-archive__list">
+                    <a class="content-archive__item" href="#">
+                        <div class="content-archive__image-wrap">
+                            <div class="content-archive__image-inner" style="background-image: url(img/content-archive-1.png);"></div>
+                        </div>
+                        <div class="content-archive__bottom">
+                            <h2 class="content-archive__title">Кровать 4–х ярусная</h2>
+                            <div class="content-archive__btn btn">
+                                Подробнее
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.904297" y="8.90393" width="14" height="2" fill="white"/>
+                                    <rect x="11.3184" y="0.903931" width="11" height="2" transform="rotate(45 11.3184 0.903931)" fill="white"/>
+                                    <rect x="19.0957" y="11.318" width="11" height="2" transform="rotate(135 19.0957 11.318)" fill="white"/>
+                                </svg>
+                            </div>
                         </div>
                     </a>
-                    <a class="archive__link" href="#">
-                        <h3 class="archive__title">Мебель для дошкольных учреждений</h3>
-                        <div class="archive__image-wrap">
-                            <img class="archive__image" src="img/archive-2.jpg" alt="">
+                    <a class="content-archive__item" href="#">
+                        <div class="content-archive__image-wrap">
+                            <div class="content-archive__image-inner" style="background-image: url(img/content-archive-2.png);"></div>
+                        </div>
+                        <div class="content-archive__bottom">
+                            <h2 class="content-archive__title">Шкаф детский для одежды 4-х местный на мет. каркасе</h2>
+                            <div class="content-archive__btn btn">
+                                Подробнее
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.904297" y="8.90393" width="14" height="2" fill="white"/>
+                                    <rect x="11.3184" y="0.903931" width="11" height="2" transform="rotate(45 11.3184 0.903931)" fill="white"/>
+                                    <rect x="19.0957" y="11.318" width="11" height="2" transform="rotate(135 19.0957 11.318)" fill="white"/>
+                                </svg>
+                            </div>
                         </div>
                     </a>
-                    <a class="archive__link" href="#">
-                        <h3 class="archive__title">Мебель для дошкольных учреждений</h3>
-                        <div class="archive__image-wrap">
-                            <img class="archive__image" src="img/archive-3.jpg" alt="">
+                    <a class="content-archive__item" href="#">
+                        <div class="content-archive__image-wrap">
+                            <div class="content-archive__image-inner" style="background-image: url(img/content-archive-3.png);"></div>
+                        </div>
+                        <div class="content-archive__bottom">
+                            <h2 class="content-archive__title">Шкаф детский для одежды 4-х местный на мет. каркасе</h2>
+                            <div class="content-archive__btn btn">
+                                Подробнее
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.904297" y="8.90393" width="14" height="2" fill="white"/>
+                                    <rect x="11.3184" y="0.903931" width="11" height="2" transform="rotate(45 11.3184 0.903931)" fill="white"/>
+                                    <rect x="19.0957" y="11.318" width="11" height="2" transform="rotate(135 19.0957 11.318)" fill="white"/>
+                                </svg>
+                            </div>
                         </div>
                     </a>
-                    <a class="archive__link" href="#">
-                        <h3 class="archive__title">Мебель для дошкольных учреждений</h3>
-                        <div class="archive__image-wrap">
-                            <img class="archive__image" src="img/archive-4.jpg" alt="">
+                    <a class="content-archive__item" href="#">
+                        <div class="content-archive__image-wrap">
+                            <div class="content-archive__image-inner" style="background-image: url(img/content-archive-1.png);"></div>
+                        </div>
+                        <div class="content-archive__bottom">
+                            <h2 class="content-archive__title">Кровать 4–х ярусная</h2>
+                            <div class="content-archive__btn btn">
+                                Подробнее
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.904297" y="8.90393" width="14" height="2" fill="white"/>
+                                    <rect x="11.3184" y="0.903931" width="11" height="2" transform="rotate(45 11.3184 0.903931)" fill="white"/>
+                                    <rect x="19.0957" y="11.318" width="11" height="2" transform="rotate(135 19.0957 11.318)" fill="white"/>
+                                </svg>
+                            </div>
                         </div>
                     </a>
-                    <a class="archive__link" href="#">
-                        <h3 class="archive__title">Мебель для дошкольных учреждений</h3>
-                        <div class="archive__image-wrap">
-                            <img class="archive__image" src="img/archive-5.jpg" alt="">
+                    <a class="content-archive__item" href="#">
+                        <div class="content-archive__image-wrap">
+                            <div class="content-archive__image-inner" style="background-image: url(img/content-archive-2.png);"></div>
+                        </div>
+                        <div class="content-archive__bottom">
+                            <h2 class="content-archive__title">Кровать 4–х ярусная</h2>
+                            <div class="content-archive__btn btn">
+                                Подробнее
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.904297" y="8.90393" width="14" height="2" fill="white"/>
+                                    <rect x="11.3184" y="0.903931" width="11" height="2" transform="rotate(45 11.3184 0.903931)" fill="white"/>
+                                    <rect x="19.0957" y="11.318" width="11" height="2" transform="rotate(135 19.0957 11.318)" fill="white"/>
+                                </svg>
+                            </div>
                         </div>
                     </a>
-                    <a class="archive__link" href="#">
-                        <h3 class="archive__title">Мебель для дошкольных учреждений</h3>
-                        <div class="archive__image-wrap">
-                            <img class="archive__image" src="img/archive-6.jpg" alt="">
+                    <a class="content-archive__item" href="#">
+                        <div class="content-archive__image-wrap">
+                            <div class="content-archive__image-inner" style="background-image: url(img/content-archive-3.png);"></div>
                         </div>
-                    </a>
-                    <a class="archive__link" href="#">
-                        <h3 class="archive__title">Мебель для дошкольных учреждений</h3>
-                        <div class="archive__image-wrap">
-                            <img class="archive__image" src="img/archive-1.jpg" alt="">
-                        </div>
-                    </a>
-                    <a class="archive__link" href="#">
-                        <h3 class="archive__title">Мебель для дошкольных учреждений</h3>
-                        <div class="archive__image-wrap">
-                            <img class="archive__image" src="img/archive-2.jpg" alt="">
+                        <div class="content-archive__bottom">
+                            <h2 class="content-archive__title">Шкаф детский для одежды 4-х местный на мет. каркасе</h2>
+                            <div class="content-archive__btn btn">
+                                Подробнее
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.904297" y="8.90393" width="14" height="2" fill="white"/>
+                                    <rect x="11.3184" y="0.903931" width="11" height="2" transform="rotate(45 11.3184 0.903931)" fill="white"/>
+                                    <rect x="19.0957" y="11.318" width="11" height="2" transform="rotate(135 19.0957 11.318)" fill="white"/>
+                                </svg>
+                            </div>
                         </div>
                     </a>
                 </div>
