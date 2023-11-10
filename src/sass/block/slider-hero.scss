@@ -2,4 +2,17 @@
     background-color: $bg;
     position: relative;
     // z-index: 1;
+    & .slick-dots {
+        position: absolute;
+        bottom: 30px;
+        display: flex;
+        list-style: none;
+        left: calc(50% - 55px);
+        & li {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            // background-color: ;
+        }
+    }
 }

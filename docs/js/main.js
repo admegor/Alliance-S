@@ -16,7 +16,7 @@
 /***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
-eval("\nconst portfolioSlider = __webpack_require__(/*! ./module/portfolio.js */ \"./src/js/module/portfolio.js\");\nconst companySlider = __webpack_require__(/*! ./module/company.js */ \"./src/js/module/company.js\");\nconst categoryNavSlider = __webpack_require__(/*! ./module/category-nav.js */ \"./src/js/module/category-nav.js\");\nconst certificatesSlider = __webpack_require__(/*! ./module/certificates.js */ \"./src/js/module/certificates.js\");\nconst menu = __webpack_require__(/*! ./module/menu.js */ \"./src/js/module/menu.js\");\n\n//# sourceURL=webpack://y/./src/js/main.js?");
+eval("\nconst portfolioSlider = __webpack_require__(/*! ./module/portfolio.js */ \"./src/js/module/portfolio.js\");\nconst companySlider = __webpack_require__(/*! ./module/company.js */ \"./src/js/module/company.js\");\nconst categoryNavSlider = __webpack_require__(/*! ./module/category-nav.js */ \"./src/js/module/category-nav.js\");\nconst certificatesSlider = __webpack_require__(/*! ./module/certificates.js */ \"./src/js/module/certificates.js\");\nconst menu = __webpack_require__(/*! ./module/menu.js */ \"./src/js/module/menu.js\");\nconst sliderРero = __webpack_require__(/*! ./module/slider-hero.js */ \"./src/js/module/slider-hero.js\");\n\n//# sourceURL=webpack://y/./src/js/main.js?");
 
 /***/ }),
 
@@ -56,7 +56,7 @@ eval("let $sliderFeedback = $('.reviews-main-list');\n\n\n\n$sliderFeedback.slic
   \*******************************/
 /***/ (function() {
 
-eval("const burgerBtn = document.querySelector(\".nav-header-burger\");\nconst navHeader = document.querySelector(\".header__menu\");\nconst submenuLists = document.querySelectorAll(\".has-submenu\");\n\nfunction menu() {\n\n    burgerBtn.addEventListener('click', (el) => {\n        el.preventDefault();\n        console.log(\"ckick!\");\n        burgerBtn.classList.toggle('active');\n        if (burgerBtn.classList.contains('active')) {\n            navHeader.classList.add('open');\n        } else {\n            navHeader.classList.remove('open');\n        }\n    }) \n    \n    for (let submenuList of submenuLists) {\n        submenuList.addEventListener('click', (e) => {\n            e.preventDefault();\n            for (let i = 0; i < submenuLists.length; i++) {\n                console.log(submenuLists[i]);\n                if (submenuLists[i].classList.contains('open')) {\n                    submenuLists[i].classList.remove('open');\n                }\n            }\n            submenuList.classList.add('open');\n        })\n    }\n}\nmenu();\n\n//# sourceURL=webpack://y/./src/js/module/menu.js?");
+eval("const burgerBtn = document.querySelector(\".nav-header-burger\");\nconst navHeader = document.querySelector(\".header__menu\");\nconst submenuLists = document.querySelectorAll(\".has-submenu\");\nconst menuCatalogTrigger = document.querySelector('.menu-catalog-item');\nconst menuCatalog = document.querySelector('.header-catalog');\n\nfunction menu() {\n\n    burgerBtn.addEventListener('click', (el) => {\n        el.preventDefault();\n        console.log(\"ckick!\");\n        burgerBtn.classList.toggle('active');\n        if (burgerBtn.classList.contains('active')) {\n            navHeader.classList.add('open');\n        } else {\n            navHeader.classList.remove('open');\n        }\n    }) \n    \n    for (let submenuList of submenuLists) {\n        submenuList.addEventListener('click', (e) => {\n            e.preventDefault();\n            for (let i = 0; i < submenuLists.length; i++) {\n                console.log(submenuLists[i]);\n                if (submenuLists[i].classList.contains('open')) {\n                    submenuLists[i].classList.remove('open');\n                }\n            }\n            submenuList.classList.add('open');\n        })\n    }\n\n    menuCatalogTrigger.addEventListener(\"mouseenter\", () => {\n        menuCatalog.classList.add('show');\n        console.log(\"show\");\n    })\n    menuCatalogTrigger.addEventListener(\"mouseout\", () => {\n        menuCatalog.classList.remove('show');\n        console.log(\"hidden\");\n    })\n    menuCatalog.addEventListener(\"mouseenter\", () => {\n        menuCatalog.classList.add('show');\n        console.log(\"show\");\n    })\n    menuCatalog.addEventListener(\"mouseout\", () => {\n        menuCatalog.classList.remove('show');\n        console.log(\"hidden\");\n    })\n    \n\n}\nmenu();\n\n//# sourceURL=webpack://y/./src/js/module/menu.js?");
 
 /***/ }),
 
@@ -67,6 +67,16 @@ eval("const burgerBtn = document.querySelector(\".nav-header-burger\");\nconst n
 /***/ (function() {
 
 eval("let $sliderPortfolio = $('.portfolio-main-list');\n\n$(window).on('load resize', function() {\n    if ($(window).width() < 768) {\n        $sliderPortfolio.not('.slick-initialized').slick({\n            dots: false,\n            infinite: false,\n            speed: 100,\n            slidesToShow: 1,\n            slidesToScroll: 1,\n            arrows: false,\n            variableWidth: true\n        });\n    } else {\n        $sliderPortfolio.filter('.slick-initialized').slick('unslick');\n    }\n});\n\n//# sourceURL=webpack://y/./src/js/module/portfolio.js?");
+
+/***/ }),
+
+/***/ "./src/js/module/slider-hero.js":
+/*!**************************************!*\
+  !*** ./src/js/module/slider-hero.js ***!
+  \**************************************/
+/***/ (function() {
+
+eval("let $sliderFeedback = $('.slider-hero');\r\n\r\n\r\n\r\n$sliderFeedback.slick({\r\n    dots: true,\r\n    infinite: false,\r\n    speed: 500,\r\n    slidesToShow: 1,\r\n    slidesToScroll: 1,\r\n    arrows: false,\r\n    fade: true,\r\n  cssEase: 'linear'\r\n});\n\n//# sourceURL=webpack://y/./src/js/module/slider-hero.js?");
 
 /***/ })
 

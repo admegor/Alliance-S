@@ -1,6 +1,8 @@
 const burgerBtn = document.querySelector(".nav-header-burger");
 const navHeader = document.querySelector(".header__menu");
 const submenuLists = document.querySelectorAll(".has-submenu");
+const menuCatalogTrigger = document.querySelector('.menu-catalog-item');
+const menuCatalog = document.querySelector('.header-catalog');
 
 function menu() {
 
@@ -27,5 +29,24 @@ function menu() {
             submenuList.classList.add('open');
         })
     }
+
+    menuCatalogTrigger.addEventListener("mouseenter", () => {
+        menuCatalog.classList.add('show');
+        console.log("show");
+    })
+    menuCatalogTrigger.addEventListener("mouseout", () => {
+        menuCatalog.classList.remove('show');
+        console.log("hidden");
+    })
+    menuCatalog.addEventListener("mouseenter", () => {
+        menuCatalog.classList.add('show');
+        console.log("show");
+    })
+    menuCatalog.addEventListener("mouseout", () => {
+        menuCatalog.classList.remove('show');
+        console.log("hidden");
+    })
+    
+
 }
 menu();
