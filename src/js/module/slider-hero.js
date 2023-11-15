@@ -10,5 +10,6 @@ $sliderFeedback.slick({
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-  cssEase: 'linear'
+    autoplay: true,
+    cssEase: 'linear'
 });

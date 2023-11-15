@@ -3,6 +3,29 @@ const navHeader = document.querySelector(".header__menu");
 const submenuLists = document.querySelectorAll(".has-submenu");
 const menuCatalogTrigger = document.querySelector('.menu-catalog-item');
 const menuCatalog = document.querySelector('.header-catalog');
+const headerEl = document.querySelector('.header');
+
+// window.addEventListener('scroll', function () {
+//     if (window.scrollY > 10) {
+//         headerEl.classList.add("scroll");
+//         } else {
+//             headerEl.classList.remove("scroll");
+//         }
+//     });
+
+    $(window).on('load resize', function() {
+        if ($(window).width() > 1300) {
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 10) {
+                    headerEl.classList.add("scroll");
+                } else {
+                    headerEl.classList.remove("scroll");
+                }
+            });
+        } else {
+            headerEl.classList.remove("scroll");
+        }
+    });
 
 function menu() {
 
@@ -46,7 +69,8 @@ function menu() {
         menuCatalog.classList.remove('show');
         console.log("hidden");
     })
-    
-
 }
+
+
+
 menu();

@@ -57,7 +57,20 @@
                 font-weight: 500;
                 display: flex;
                 align-items: center;
+                transition: all ease-in .3s;
             }
+        }
+    }
+    & .has-submenu {
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            right: -14px;
+            top: 48px;
+            background: url("../../img/icon-menu-arrow.svg") no-repeat center;
+            height: 8px;
+            width: 13px;
         }
     }
 }

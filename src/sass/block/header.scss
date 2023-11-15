@@ -1,5 +1,10 @@
 .header {
-    position: relative;
+    position: sticky;
+    top: 30px;
+    z-index: 6;
+    &__wrapper-sup {
+        position: relative;
+    }
     &__wrap {
         background-color: $accent-light;
         height: 100px;
@@ -11,6 +16,7 @@
         border-radius: 50px;
         margin-top: 30px;
         margin-bottom: 30px;
+        transition: all ease-in .3s;
         @include xl {
             padding-left: 30px;
             height: 80px;
@@ -28,12 +34,14 @@
             color: $font-color;
             text-decoration: none;
             font-weight: 500;
+            transition: all ease-in .3s;
         }
     }
     &__btn {
         display: flex;
         align-items: center;
         justify-content: center;
+        background-color: transparent;
     }
     &__btn svg {
         margin-left: 10px;
@@ -53,5 +61,15 @@
         height: 100%;
         display: flex;
         align-items: center;
+    }
+    &.scroll .header__wrap {
+        background-color: #0D242C;
+        
+        .header__contacts a {
+            color: #fff;
+        }
+        .nav-header__list li a  {
+            color: #fff;
+        }
     }
 }

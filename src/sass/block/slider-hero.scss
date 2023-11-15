@@ -8,11 +8,36 @@
         display: flex;
         list-style: none;
         left: calc(50% - 55px);
-        & li {
+        padding-left: 0;
+
+        & li button {
             width: 25px;
             height: 25px;
             border-radius: 50%;
-            // background-color: ;
+            background-color: #EFF3F8;
+            font-size: 0;
+            border: none;
+            cursor: pointer;
+            transition: all ease-in .3;
+            &:hover {
+                transition: all ease-in .3;
+                background-color: #aabbb0;
+            }
+        }
+        & li:not(:last-child) {
+            margin-right: 17px;
+        }
+        & .slick-active button {
+            transition: all ease-in .3;
+            background-color: #6B8676;
+        }
+    }
+    &__item {
+        max-height: 500px;
+        border-radius: 50px;
+        overflow: hidden;
+        @include md {
+            border-radius: 30px;
         }
     }
 }

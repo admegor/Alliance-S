@@ -57,7 +57,7 @@
         }
         &:nth-child(1) {
             order: 1;
-            width: 66%;
+            width: 67%;
             margin-bottom: 40px;
             & .portfolio-main-list__img-wrap {
                 max-width: 903px;
@@ -71,7 +71,7 @@
         }
         &:nth-child(2) {
             order: 2;
-            width: 33%;
+            width: 32%;
             margin-bottom: 40px;
             & .portfolio-main-list__img-wrap {
                 max-width: 267px;
@@ -155,7 +155,7 @@
     }
     &__img-wrap {
         border-radius: 34px;
-        background-image: url("../../img/portfolio-main-img1.jpg");
+        // background-image: url("../../img/portfolio-main-img1.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
