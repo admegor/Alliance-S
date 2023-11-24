@@ -1,0 +1,122 @@
+.popup {
+    z-index: 6;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    opacity: 1;
+    visibility: hidden;
+    overflow-y: auto;
+    transition: all 0.8s ease;
+    &__body {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 10px;
+    }
+    &__content {
+        color: #ffffff;
+        max-width: 1467px;
+        width: 100%;
+        max-width: 1720px;
+        position: relative;
+        transition: all 0.8s ease;
+        opacity: 0;
+    }
+    &__close {
+        position: absolute;
+        border: 1px solid #ffffff;
+        border-radius: 22px;
+        width: 70px;
+        height: 70px;
+        top: 30px;
+        right: 30px;
+        background-color: #fff;
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: rgba(13, 36, 43, 0.5);
+            width: 19px;
+            height: 2px;
+            top: 14px;
+            right: 5px;
+            transform: rotate(45deg);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: rgba(13, 36, 43, 0.5);
+            width: 19px;
+            height: 2px;
+            top: 14px;
+            right: 5px;
+            transform: rotate(-45deg);
+        }
+    }
+    &.open {
+        opacity: 1;
+        visibility: visible;
+        & .popup__content {
+            opacity: 1;
+        }
+    }
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 68px;
+    }
+    & .feedback-main__title.section-top__title {
+        color: #0D242C;
+        margin-top: 7px;
+    }
+    & .feedback-main__subtitle.section-top__subtitle  {
+        color: #0D242C;
+    }
+    &__accent-text {
+        color: #AA7D54;
+    }
+    @include lg {
+        &__close {
+            display: block;
+        }
+        &__wrap {
+            flex-direction: column;
+            padding-left: 24px;
+            margin-bottom: 30px;
+        }
+        &__title {
+            font-size: 25px;
+        }
+        &__subtitle {
+            font-size: 16px;
+            line-height: 21px;
+            & br {
+                display: none;
+            }
+        }
+        &__content {
+            padding: 30px 10px;
+        }
+        &__content-wrap {
+            flex-direction: column;
+        }
+        &__block {
+            padding: 10px 15px;
+            border-width: 1px;
+            width: 100%;
+            &:nth-child(2n) {
+                margin-left: 0;
+            }
+        }
+        &__block-title {
+            font-size: 16px;
+        }
+        &__block-text {
+            font-size: 16px;
+        }
+    }
+}

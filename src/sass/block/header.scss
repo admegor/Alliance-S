@@ -62,6 +62,16 @@
         display: flex;
         align-items: center;
     }
+    &__logo-image {
+        width: 182px;
+        height: 35px;
+        background-image: url("../../img/logo-desktop.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &.scroll .header__logo-image {
+        background-image: url("../../img/logo-header-light.svg");
+    }
     &.scroll .header__wrap {
         background-color: #0D242C;
         
