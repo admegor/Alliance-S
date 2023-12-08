@@ -6,6 +6,7 @@
         position: relative;
     }
     &__wrap {
+        overflow: hidden;
         background-color: $accent-light;
         height: 100px;
         display: flex;
@@ -17,6 +18,7 @@
         margin-top: 30px;
         margin-bottom: 30px;
         transition: all ease-in .3s;
+        position: relative;
         @include xl {
             padding-left: 30px;
             height: 80px;
@@ -42,6 +44,7 @@
         align-items: center;
         justify-content: center;
         background-color: transparent;
+        text-decoration: none;
     }
     &__btn svg {
         margin-left: 10px;
@@ -73,7 +76,8 @@
         background-image: url("../../img/logo-header-light.svg");
     }
     &.scroll .header__wrap {
-        background-color: #0D242C;
+        // background-color: #0D242C;
+        background-color: transparent;
         
         .header__contacts a {
             color: #fff;
@@ -82,4 +86,22 @@
             color: #fff;
         }
     }
+    &__bg {
+        position: absolute;
+    }
+    &.scroll &__bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(13, 36, 43, 0.7);
+        filter: blur(4px);
+        overflow: hidden;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+    &__logo-link {
+        z-index: 1;
+    }
+
 }

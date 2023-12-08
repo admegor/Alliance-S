@@ -1,0 +1,33 @@
+.popup-feedback  {
+    & .feedback-main__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    & .feedback-main__content {
+        padding-left: initial;
+    }
+    & .feedback-main__submit{
+        height: initial;
+        display: block;
+        width: 100%;
+        max-width: 548px;
+        height: 85px;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        @include md {
+            margin-top: 15px;
+            height: 60px;
+        }
+    }
+    & .feedback-main__form input {
+        max-width: 548px;
+    }
+    & .popup__content {
+        max-width: 1200px;
+    }
+    & .section-top__subtitle {
+        padding-left: 14%;
+    }
+}
